@@ -44,7 +44,7 @@
                 <a href="https://github.com/HehLul"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.linkedin.com/in/ahmed-salman-749418273"><i class='bx bxl-linkedin' ></i></a>
             </div>
-        <a href="#" class="btn">Download CV</a>
+            <a id="downloadCV-btn" href="#" class="downloadCV-btn">Download CV</a>
         </div>
         <div class="home-img">
             <img src="images/pfpWithBlueBg2.png" alt="">
@@ -201,5 +201,28 @@
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js" ></script>
+
+    <!-- cv button script -->
+    <script>
+        document.getElementById('downloadCV-btn').addEventListener('click', function() {
+            // Change the 'your-resume.pdf' to the actual file name of your resume
+            var resumeUrl = 'images/Resume_Jan2024.pdf';
+            
+            // Create an invisible link element
+            var downloadLink = document.createElement('a');
+            downloadLink.href = resumeUrl;
+            downloadLink.download = 'images/Resume_Jan2024.pdf';
+            
+            // Append the link to the body
+            document.body.appendChild(downloadLink);
+            
+            // Trigger a click on the link to start the download
+            downloadLink.click();
+            
+            // Remove the link from the DOM once the download is initiated
+            document.body.removeChild(downloadLink);
+        });
+    </script>
+
 </body>
 </html>

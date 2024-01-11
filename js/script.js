@@ -63,3 +63,28 @@ const typed = new Typed('.multiple-text', {
     backDelay:1000,
     loop:true
 });
+
+
+
+// // download resume functionality
+// let downloadButton = document.getElementById('downloadCV-btn');
+// downloadButton.addEventListener('click', () => {
+//     // Change the 'your-resume.pdf' to the actual file name of your resume
+//     var resumeUrl = "C:\Users\amdsa\Desktop\projects\Web Dev\PersonalPortfolio2\HehLul.github.io\images\Resume_Jan2024.pdf";
+
+//     console.log("CV BTN CLICKED")
+
+//     // Create an invisible link element
+//     var downloadLink = document.createElement('a');
+//     downloadLink.href = resumeUrl;
+//     downloadLink.download = "C:\Users\amdsa\Desktop\projects\Web Dev\PersonalPortfolio2\HehLul.github.io\images\Resume_Jan2024.pdf";
+
+//     // Append the link to the body
+//     document.body.appendChild(downloadLink);
+
+//     // Trigger a click on the link to start the download
+//     downloadLink.click();
+
+//     // Remove the link from the DOM once the download is initiated
+//     document.body.removeChild(downloadLink);
+// });
