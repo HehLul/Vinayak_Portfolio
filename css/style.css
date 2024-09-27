@@ -503,14 +503,14 @@ span{
     .contact{
         min-height: auto;
     }
-
+    .experience-container{
+        grid-template-columns: 1fr 1fr; /* Show in 2 columns for medium screens */
+        gap: 2rem; /* Adjust gap for smaller screens */
+    }
     .footer{
         padding: 2rem 3%;
     }
 }
-
-
-
 
 @media (max-width: 768px){
     #menu-icon{
@@ -564,11 +564,16 @@ span{
     .projects-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .experience-container{
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablet-size screens */
+        gap: 2rem; /* Adjust spacing */
+    }
 }
 
 @media (max-width: 617px){
-    .projects-container{
-        grid-template-columns: 1fr;
+    .projects-container,
+    .experience-container{
+        grid-template-columns: 1fr; /* Display in one column for small screens */
     }
 }
 
